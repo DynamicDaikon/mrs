@@ -1,0 +1,5 @@
+# dockerコンテナの作成（初回以降は多分使わない）
+docker-compose up -d
+
+# postgreSql docker環境へのログイン
+docker exec -it postgres bash
