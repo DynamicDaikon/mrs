@@ -18,10 +18,6 @@ public class User implements Serializable {
   @Enumerated(EnumType.STRING)
   private RoleName roleName;
 
-  public RoleName getRoleName() {
-    return roleName;
-  }
-
   public String getUserId() {
     return userId;
   }
@@ -52,6 +48,10 @@ public class User implements Serializable {
 
   public void setLastName(String lastName) {
     this.lastName = lastName;
+  }
+
+  public RoleName getRoleName() {
+    return roleName;
   }
 
   public void setRoleName(RoleName roleName) {
